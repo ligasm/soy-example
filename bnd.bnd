@@ -1,0 +1,18 @@
+-sources: true
+Bundle-Name: Liferay Soy Portlet
+Bundle-SymbolicName: com.liferay.example
+Bundle-Version: 1.0.0.${tstamp}
+
+-buildpath:  \
+	javax.portlet;version='[2.0,3)',\
+	javax.servlet;version='[2.5,4)',\
+	com.liferay.util.bridges.soy
+
+-dsannotations: *
+
+Private-Package: \
+	com.liferay.example
+
+-includeresource:\
+	META-INF/resources=src/main/resources/META-INF/resources
+
